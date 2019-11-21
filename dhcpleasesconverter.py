@@ -20,7 +20,7 @@ def parsedhcpleases(in_file):
 
 class TestLeases(unittest.TestCase):
     def test_regexp_cutter(self):
-        cases = {1: ['''dhcp_uni.txt''', ['dhcp-host=7c:2f:80:5f:e3:c3,A510-IP,192.168.88.151']]}
+        cases = {1: ['''dhcp_uni.txt''', ['dhcp-host=7c:2f:80:5f:e3:c3,A510-IP,192.168.1.151']]}
         for key in cases.keys():
             data = cases[key][0]
             target = cases[key][1]
