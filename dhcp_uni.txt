@@ -1,0 +1,115 @@
+service {
+    dhcp-server {
+        disabled false
+        hostfile-update disable
+        shared-network-name LAN1 {
+            authoritative disable
+            subnet 192.168.1.0/24 {
+                default-router 192.168.1.1
+                dns-server 192.168.1.1
+                lease 86400
+                start 192.168.1.21 {
+                    stop 192.168.1.60
+                }
+                static-mapping A510-IP {
+                    ip-address 192.168.1.151
+                    mac-address 7c:2f:80:5f:e3:c3
+                }
+                static-mapping BLACKBERRY-DFC3 {
+                    ip-address 192.168.1.148
+                    mac-address 70:aa:b2:a2:ed:6d
+                }
+                static-mapping ESP_34040F {
+                    ip-address 192.168.1.9
+                    mac-address 2c:3a:e8:34:04:0f
+                }
+                static-mapping ESP_A7A848 {
+                    ip-address 192.168.1.137
+                    mac-address ec:fa:bc:a7:a8:48
+                }
+                static-mapping ILO {
+                    ip-address 192.168.1.111
+                    mac-address 3c:a8:2a:a0:cd:8e
+                }
+                static-mapping Keenetic_Giga {
+                    ip-address 192.168.1.101
+                    mac-address 50:ff:20:07:63:56
+                }
+                static-mapping LGwebOSTV {
+                    ip-address 192.168.1.145
+                    mac-address c8:08:e9:24:68:40
+                }
+                static-mapping LGwebOSTV2 {
+                    ip-address 192.168.1.147
+                    mac-address 5c:dc:96:05:51:44
+                }
+                static-mapping LibreELEC {
+                    ip-address 192.168.1.120
+                    mac-address dc:a6:32:1b:9c:da
+                }
+                static-mapping MBP-Gizage {
+                    ip-address 192.168.1.127
+                    mac-address 5c:96:9d:8c:76:7f
+                }
+                static-mapping MBP-Gizage-lan {
+                    ip-address 192.168.1.150
+                    mac-address a8:20:66:47:38:43
+                }
+                static-mapping NCEDR020084 {
+                    ip-address 192.168.1.177
+                    mac-address e4:11:5b:50:13:11
+                }
+                static-mapping NCEDR020084_wifi {
+                    ip-address 192.168.1.128
+                    mac-address 9c:b7:0d:ba:fb:ea
+                }
+                static-mapping Printer {
+                    ip-address 192.168.1.136
+                    mac-address 80:a5:89:c4:ad:40
+                }
+                static-mapping R2ARO {
+                    ip-address 192.168.1.66
+                    mac-address 1c:91:48:0f:3f:90
+                }
+                static-mapping XPE_NAS {
+                    ip-address 192.168.1.222
+                    mac-address 3c:a8:2a:a0:cd:8d
+                }
+                static-mapping Zalinaphone {
+                    ip-address 192.168.1.140
+                    mac-address dc:9b:9c:88:29:f3
+                }
+                static-mapping android-1c44da30368151c6 {
+                    ip-address 192.168.1.126
+                    mac-address 5c:3c:27:0e:64:69
+                }
+                static-mapping detskaya {
+                    ip-address 192.168.1.122
+                    mac-address 40:8d:5c:75:a1:17
+                }
+                static-mapping iPhone-Georgij {
+                    ip-address 192.168.1.112
+                    mac-address 54:e4:3a:1c:fe:3b
+                }
+                static-mapping phaggiubuntu {
+                    ip-address 192.168.1.233
+                    mac-address 02:11:32:2e:81:c7
+                }
+                static-mapping raspberrypi {
+                    ip-address 192.168.1.121
+                    mac-address dc:a6:32:1b:9c:db
+                }
+                static-mapping torrent-lazar {
+                    ip-address 192.168.1.144
+                    mac-address 02:11:32:27:a5:15
+                }
+                static-mapping winguest {
+                    ip-address 192.168.1.146
+                    mac-address 02:11:32:28:e1:30
+                }
+                static-mapping yura-desktop {
+                    ip-address 192.168.1.125
+                    mac-address 00:23:f8:19:9b:05
+                }
+            }
+        }
